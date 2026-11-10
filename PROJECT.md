@@ -2,6 +2,8 @@
 
 This document is intended for human collaborators and AI agents (including GPT agents) who join the project. It summarizes the background, goals, decisions made so far, and the current work plan.
 
+**Last major update:** November 10, 2026
+
 ---
 
 ## 1. Project Purpose
@@ -51,7 +53,7 @@ Tone preference: Factual, calm, professional, and source-driven. Avoid overly em
 - Dedicated project identity preferred over personal accounts for long-term credibility.
 - Website first as a permanent, citable hub.
 - Social media (especially X/Twitter) as distribution channel.
-- Free hosting: GitHub Pages (current) or Wix if needed later.
+- **Current live site is on Wix** (GitHub remains the source of truth for content and version control).
 
 ### Content Principles
 - Prefer primary sources, official reports, and documented investigations.
@@ -61,8 +63,20 @@ Tone preference: Factual, calm, professional, and source-driven. Avoid overly em
 
 ---
 
-## 5. Current Site Structure (as of November 2026)
+## 5. Current Status (November 10, 2026)
 
+### Live Website (Wix)
+- **Live URL:** https://headless-bqgrihxrsnz-twitodor7-1409.wix-site-host.com
+- **Dashboard:** https://manage.wix.com/dashboard/a95852c5-0e03-4883-8ad6-56c036a49a57
+- **metaSiteId:** `a95852c5-0e03-4883-8ad6-56c036a49a57`
+- Currently contains basic structure (index redirect + CSS + JS). Full English and German content pages still need to be fully uploaded/updated on Wix.
+
+### GitHub Repository (Source of Truth)
+- **Repo:** https://github.com/twitodor9-lgtm/funding-facts
+- Owner: twitodor9-lgtm
+- Contains the full modular static site (EN + DE), PROJECT.md, SOURCES.md, and README.
+
+### Site Structure in GitHub
 ```
 /
 ├── index.html              → redirects to /en/
@@ -70,17 +84,17 @@ Tone preference: Factual, calm, professional, and source-driven. Avoid overly em
 │   ├── css/style.css
 │   └── js/main.js
 ├── en/
-│   ├── index.html          (Home)
+│   ├── index.html          (Home – expanded content)
 │   └── sources.html
 ├── de/
-│   ├── index.html          (Startseite)
+│   ├── index.html          (Startseite – expanded content)
 │   └── sources.html
 ├── README.md
 ├── SOURCES.md
 └── PROJECT.md              (this file)
 ```
 
-Features already implemented:
+Features implemented:
 - Clean, highly readable, mobile-friendly design
 - Floating language switcher (EN / DE)
 - Simple client-side search on each page
@@ -107,8 +121,8 @@ Reported ballpark figures (2012–2022 range): ~NIS 150 million total from Germa
 
 ## 7. Work Plan & Next Priorities
 
-### Short-term
-- [ ] Activate GitHub Pages so the site is publicly live
+### Immediate / Short-term
+- [ ] Finish uploading full English + German content pages to the live Wix site
 - [ ] Improve and expand the Sources pages with more direct links and short excerpts
 - [ ] Add an “About / Methodology” page
 - [ ] Create a simple data table or timeline of major funding cases
@@ -137,6 +151,7 @@ When assisting with this project, agents should:
 4. **Support expandability.** New languages, new cases, and new data tables should be easy to add later.
 5. **Update this PROJECT.md** when significant new decisions or major content additions are made.
 6. **Prioritize European accessibility** – clear language, good typography, mobile-friendly, and easy language switching.
+7. **Treat the GitHub repo as the source of truth** for content. Sync important changes to the live Wix site when relevant.
 
 Useful tasks for agents:
 - Drafting or improving page content in English / German (and later other languages)
@@ -144,17 +159,19 @@ Useful tasks for agents:
 - Suggesting data visualizations or table structures
 - Preparing short social-media-ready summaries based on site content
 - Reviewing text for clarity and neutrality
+- Helping upload or update files on the Wix site (using metaSiteId above)
 
 ---
 
-## 9. Repository Information
+## 9. Repository & Live Site Information
 
-- GitHub: https://github.com/twitodor9-lgtm/funding-facts
-- Owner: twitodor9-lgtm
-- Visibility: Public
-- Intended public site (after enabling Pages): https://twitodor9-lgtm.github.io/funding-facts/
+- **GitHub:** https://github.com/twitodor9-lgtm/funding-facts
+- **Owner:** twitodor9-lgtm
+- **Visibility:** Public
+- **Live Wix site:** https://headless-bqgrihxrsnz-twitodor7-1409.wix-site-host.com
+- **Wix Dashboard:** https://manage.wix.com/dashboard/a95852c5-0e03-4883-8ad6-56c036a49a57
+- **Wix metaSiteId:** a95852c5-0e03-4883-8ad6-56c036a49a57
 
 ---
 
-*Last updated: November 2026*
-*This file should be kept current as the project evolves.*
+*This file should be kept current as the project evolves. New agents should always start by reading this document and the latest commits in the repository.*
